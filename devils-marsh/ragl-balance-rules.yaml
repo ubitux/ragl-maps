@@ -11,9 +11,7 @@ GUN:
 1TNK:
 	Health:
 		HP: 26000
-	SpawnActorOnDeath:
-		Probability: 0
-		Actor: 1TNK.Husk
+
 		
 JEEP:
 	Mobile:
