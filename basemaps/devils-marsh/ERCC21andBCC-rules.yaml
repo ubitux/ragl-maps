@@ -25,12 +25,12 @@ PROC:
 		Sequence: topsolid
 		Palette: cloak
 		IsPlayerPalette: true
-    -HitShape:
-    -HitShape@BOTTOMLEFT:
-    -HitShape@TOP:
+	-HitShape:
+	-HitShape@BOTTOMLEFT:
+	-HitShape@TOP:
 
 	HitShape@TOPLEFT:
-		TargetableOffsets: 0,-1052,0 
+		TargetableOffsets: 0,-1052,0
 		Type: Rectangle
 			TopLeft: -1536, -256
 			BottomRight: -256,256
@@ -42,7 +42,7 @@ PROC:
 			BottomRight: 1536, 256
 
 	HitShape@BOTRIGHT:
-		TargetableOffsets: -1600,1052,0 
+		TargetableOffsets: -1600,1052,0
 		Type: Rectangle
 			TopLeft: 256, 718
 			BottomRight: 1536, 1280
@@ -52,13 +52,12 @@ PROC:
 		Type: Rectangle
 			TopLeft: -1536, 768
 			BottomRight: -256, 2048
-            
-	
+
 ^Palettes:
-    PaletteFromPaletteWithAlpha@cloak:
-        Name: cloak
-        BasePalette: player
-        Alpha: 0.45
+	PaletteFromPaletteWithAlpha@cloak:
+		Name: cloak
+		BasePalette: player
+		Alpha: 0.45
 
 ^Infantry:
 	Inherits@PROC: ^AffectsPROC2
@@ -142,7 +141,3 @@ TENT:
 		ExitCell: 0,2
 		Facing: 1024
 		ProductionTypes: Soldier, Infantry
-
-
-
-

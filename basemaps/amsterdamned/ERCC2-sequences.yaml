@@ -6,7 +6,7 @@ ref-bot:
 		Offset: 2, 3
 		ZOffset: -1c511
 		Start: 1
-    topsolid: ref-top
+	topsolid: ref-top
 		Offset: 2, 3
 		ZOffset: 0c912
 		Start: 0
@@ -14,10 +14,10 @@ ref-bot:
 		Offset: 2, 3
 		ZOffset: 0c912
 		Start: 2
-    opaquetop: ref-top
+	opaquetop: ref-top
 		Offset: 2, 3
 		ZOffset: 0c912
-		Start: 1	
+		Start: 1
 	damaged-opaquetop: ref-top
 		Offset: 2, 3
 		ZOffset: 0c912
