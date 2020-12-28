@@ -64,17 +64,21 @@ PROC:
 	Inherits@PROC: ^AffectsPROC2
 E7:
 	Inherits@PROC: ^AffectsPROC
+	-GrantConditionOnAttack@proc:
 E6:
 	Inherits@PROC: ^AffectsPROC
+	-GrantConditionOnAttack@proc:
 SPY:
 	Inherits@PROC: ^AffectsPROC
+	-GrantConditionOnAttack@proc:
 THF:
 	Inherits@PROC: ^AffectsPROC
+	-GrantConditionOnAttack@proc:
 
 ^AffectsPROC:
 	ProximityExternalCondition@cloak:
 		Condition: cloak
-		ValidStances: enemy, neutral, ally
+		ValidRelationships: enemy, neutral, ally
 		Range: 0c552
 		RequiresCondition: !moving
 	GrantConditionOnMovement@proc:
@@ -87,7 +91,7 @@ THF:
 		RevokeDelay: 50
 	ProximityExternalCondition@cloak:
 		Condition: cloak
-		ValidStances: enemy, neutral, ally
+		ValidRelationships: enemy, neutral, ally
 		Range: 0c412
 		RequiresCondition: attack
 
@@ -122,7 +126,7 @@ TENT:
 		Bounds: 48,20
 		DecorationBounds: 48,48
 	Building:
-		Footprint: X= XX ==
+		Footprint: x= xx ==
 		Dimensions: 2,3
 		LocalCenterOffset: 0,-200,0
 	RallyPoint:
