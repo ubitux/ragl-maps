@@ -54,9 +54,6 @@ Actors:
 	Actor48: barl
 		Owner: Neutral
 		Location: 48,36
-	Actor51: utilpol2
-		Owner: Neutral
-		Location: 39,39
 	Actor52: barl
 		Owner: Neutral
 		Location: 46,39
@@ -150,9 +147,6 @@ Actors:
 	Actor155: crater1
 		Owner: Neutral
 		Location: 90,86
-	Actor156: greenthing
-		Owner: Neutral
-		Location: 90,86
 	Actor84: starpearl
 		Owner: Neutral
 		Location: 3,3
@@ -172,12 +166,6 @@ Actors:
 	Actor93: mine
 		Owner: Neutral
 		Location: 24,22
-	Actor94: tanktrap1
-		Owner: Neutral
-		Location: 9,26
-	Actor95: mine
-		Owner: Neutral
-		Location: 10,30
 	Actor112: tanktrap2
 		Owner: Neutral
 		Location: 12,40
@@ -268,9 +256,6 @@ Actors:
 	Actor134: mpspawn
 		Owner: Neutral
 		Location: 79,70
-	Actor191: mpspawn
-		Owner: Neutral
-		Location: 15,20
 	Actor192: ctflag
 		Faction: england
 		Location: 6,77
@@ -396,11 +381,6 @@ Actors:
 	Actor141: wood
 		Owner: Neutral
 		Location: 63,53
-	Actor142: c1
-		Owner: Neutral
-		Facing: 96
-		SubCell: 3
-		Location: 62,54
 	Actor144: wood
 		Owner: Neutral
 		Location: 63,54
@@ -431,8 +411,31 @@ Actors:
 	Actor190: tox_sign
 		Owner: Neutral
 		Location: 7,2
+	Actor202: utilpol2
+		Owner: Neutral
+		Location: 39,38
+	Actor156: greenthing
+		Owner: Neutral
+		Location: 90,85
+	Actor203: t11.husk
+		Owner: Neutral
+		Location: 67,1
+	Actor142: c9
+		Owner: Neutral
+		SubCell: 3
+		Facing: 384
+		Location: 62,54
+	Actor191: mpspawn
+		Owner: Neutral
+		Location: 15,20
+	Actor94: tanktrap1
+		Owner: Neutral
+		Location: 9,26
+	Actor95: mine
+		Owner: Neutral
+		Location: 10,30
 
-Rules: ERCC2-rules.yaml, ragl-balance-rules.yaml, ragl-briefing-rules.yaml, ragl-lobby-rules.yaml, palettes.yaml, rules-actors.yaml, ragl-actor-rules.yaml
+Rules: ERCC21andBCC-rules.yaml, ragl-balance-rules.yaml, ragl-briefing-rules.yaml, palettes.yaml, rules-actors.yaml, ragl-actor-rules.yaml
 
 Sequences: ERCC2-sequences.yaml, sequences-actors.yaml, ragl-actor-sequences.yaml
 

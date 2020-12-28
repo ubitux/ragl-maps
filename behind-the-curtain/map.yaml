@@ -385,7 +385,7 @@ Actors:
 		Owner: Neutral
 		Location: 29,63
 
-Rules: ERCC2-rules.yaml, ragl-balance-rules.yaml, ragl-briefing-rules.yaml, ragl-lobby-rules.yaml, ragl-actor-rules.yaml
+Rules: ERCC21andBCC-rules.yaml, ragl-balance-rules.yaml, ragl-briefing-rules.yaml, ragl-actor-rules.yaml
 
 Sequences: ERCC2-sequences.yaml, ragl-actor-sequences.yaml
 

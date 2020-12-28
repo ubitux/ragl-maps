@@ -6,12 +6,12 @@ PROC:
 		Dimensions: 3,3
 		LocalCenterOffset: 0,-512,0
 	Refinery:
-		DockAngle: 192
+		DockAngle: 768
 		DockOffset: 1,1
 	FreeActor:
 		Actor: HARV
 		SpawnOffset: 1,1
-		Facing: 192
+		Facing: 768
 	Selectable:
 		Bounds: 72,45,0,-4
 		DecorationBounds: 72,75,1,-4
@@ -90,6 +90,54 @@ THF:
 		ValidStances: enemy, neutral, ally
 		Range: 0c412
 		RequiresCondition: attack
+
+BARR:
+	Selectable:
+		Bounds: 48,20
+		DecorationBounds: 48,48
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
+		Type: Rectangle
+			TopLeft: -1036, -768
+			BottomRight: 1036,1036
+	Building:
+		Footprint: x= xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-200,0
+	RallyPoint:
+	Exit@1:
+		RequiresCondition: !being-captured
+		SpawnOffset: 700,-100,0
+		ExitCell: 1,0
+		ProductionTypes: Soldier, Infantry
+	Exit@2:
+		RequiresCondition: !being-captured
+		SpawnOffset: -700,600,0
+		ExitCell: 0,2
+		ProductionTypes: Soldier, Infantry
+
+TENT:
+	Selectable:
+		Bounds: 48,20
+		DecorationBounds: 48,48
+	Building:
+		Footprint: X= XX ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-200,0
+	RallyPoint:
+	Exit@1:
+		RequiresCondition: !being-captured
+		SpawnOffset: 700,-100,0
+		ExitCell: 1,0
+		Facing: 512
+		ProductionTypes: Soldier, Infantry
+	Exit@2:
+		RequiresCondition: !being-captured
+		SpawnOffset: -700,600,0
+		ExitCell: 0,2
+		Facing: 1024
+		ProductionTypes: Soldier, Infantry
 
 
 

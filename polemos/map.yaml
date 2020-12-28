@@ -368,6 +368,6 @@ Actors:
 	Actor149: mine
 		Owner: Neutral
 		Location: 15,42
-Rules: ERCC2-rules.yaml, ragl-balance-rules.yaml, ragl-briefing-rules.yaml, ragl-lobby-rules.yaml, ragl-actor-rules.yaml
+Rules: ERCC21andBCC-rules.yaml, ragl-balance-rules.yaml, ragl-briefing-rules.yaml, ragl-actor-rules.yaml
 Sequences: ERCC2-sequences.yaml, ragl-actor-sequences.yaml
 Weapons: ragl-weapons.yaml

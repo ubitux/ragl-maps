@@ -1586,7 +1586,7 @@ Actors:
 		Owner: Neutral
 		Location: 2,2
 
-Rules: ERCC2-rules.yaml, ragl-balance-rules.yaml, ragl-briefing-rules.yaml, ragl-lobby-rules.yaml, debris_deco.yaml, ragl-actor-rules.yaml
+Rules: ERCC21andBCC-rules.yaml, ragl-balance-rules.yaml, ragl-briefing-rules.yaml, debris_deco.yaml, ragl-actor-rules.yaml
 
 Sequences: ERCC2-sequences.yaml, debris_sequences.yaml, ragl-actor-sequences.yaml
 
