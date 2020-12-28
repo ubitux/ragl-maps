@@ -153,15 +153,6 @@ nsyrd:
 	icon: syrdicon
 	fake-icon: syrficon
 
-portal:
-	open: pdox
-		Length: 4
-	idle: pdox
-		Start: 34
-		Length: 23
-		Tick: 120
-		ZOffset: 0c112
-
 tportal:
 	open: tslamake
 		Length: 4
@@ -179,15 +170,6 @@ pearlstar:
 		Start: 32
 		Length: 21
 		Tick: 80
-
-redport:
-	open: iron
-		Start: 13
-		Length: 4
-	idle: iron
-		Start: 13
-		Length: 9
-		Tick: 110
 
 crater1:
 	Defaults:

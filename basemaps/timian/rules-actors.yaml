@@ -10,7 +10,6 @@ COME1:
 	RenderSprites:
 		Image: playerflare
 		Palette: cloak
-		IsPlayerPalette: True
 	-RevealsShroud:
 	Tooltip:
 		Name: Gas from the..
@@ -144,21 +143,6 @@ redya:
 	Tooltip:
 		Name: red ant
 
-starpo:
-	Inherits: ^ScienceBuilding
-	Inherits@shape: ^2x2Shape
-	RenderSprites:
-		Image: portal
-	Tooltip:
-		Name: Golden Ratio Star Portal (broken chronosphere)
-	Building:
-		Footprint: xx xx
-		Dimensions: 2,2
-	Health:
-		HP: 1000000
-	Armor:
-		Type: Wood
-
 starpoto:
 	Inherits: CTFLAG
 	RenderSprites:
@@ -179,21 +163,6 @@ liti2:
 	RenderSprites:
 		Image: liti
 	-Tooltip:
-
-redpo:
-	Inherits: ^ScienceBuilding
-	Inherits@shape: ^2x2Shape
-	RenderSprites:
-		Image: redport
-	Tooltip:
-		Name: testset
-	Building:
-		Footprint: xx xx
-		Dimensions: 2,2
-	Health:
-		HP: 1000000
-	Armor:
-		Type: Wood
 
 crater1:
 	Inherits: TANKTRAP1
