@@ -1,0 +1,307 @@
+PROC:
+	RenderSprites:
+		Image: ref-bot
+	Building:
+		Footprint: =+x +=+ x+=
+		Dimensions: 3,3
+		LocalCenterOffset: 0,-512,0
+	Refinery:
+		DockAngle: 192
+		DockOffset: 1,1
+	FreeActor:
+		Actor: HARV
+		SpawnOffset: 1,1
+		Facing: 192
+	Selectable:
+		Bounds: 72,54,0,0
+		DecorationBounds: 72,75,1,-4
+	-WithIdleOverlay@TOP:
+	WithIdleOverlay@topsolid:
+		Sequence: topsolid
+		RequiresCondition: !cloak
+	GrantConditionOnDamageState@CRIT:
+		Condition: critical
+		EnabledSounds: kaboom1.aud
+		ValidDamageStates: Critical   
+    -HitShape:
+    -HitShape@BOTTOMLEFT:
+    -HitShape@TOP:
+	ExternalCondition@cloak:
+		Condition: cloak
+	WithIdleOverlay@cloak:
+		Sequence: topsolid
+		Palette: cloak
+		IsPlayerPalette: true
+		RequiresCondition: cloak
+
+	HitShape@TOPLEFT:
+		TargetableOffsets: 268,-1152,0  , 268,-530,0
+		Type: Rectangle
+			TopLeft: -1536, -256
+			BottomRight: -256,256
+
+	HitShape@TOPRIGHT:
+		TargetableOffsets: 1050,1152,0  ,   820,630,0
+		Type: Rectangle
+			TopLeft: 256, -1024
+			BottomRight: 1536, 256
+
+	HitShape@BOTRIGHT:
+		TargetableOffsets: -1400,1152,0  , -1500,730,0
+		Type: Rectangle
+			TopLeft: 256, 718
+			BottomRight: 1536, 1280
+
+	HitShape@BOTLEFT:
+		TargetableOffsets: -1600,-1252,0  ,  -1700,-730,0
+		Type: Rectangle
+			TopLeft: -1536, 768
+			BottomRight: -256, 2048
+            
+E7:
+    Inherits@PROC: ^AffectsPROC
+^AffectsPROC:
+	ProximityExternalCondition@cloak:
+		Condition: cloak
+		ValidStances: enemy, neutral, ally
+		Range: 0c612
+		RequiresCondition: !moving
+	GrantConditionOnMovement@proc:
+    	Condition: moving
+Firenew:
+	Inherits: FLARE
+	RenderSprites:
+		Image: firene
+	Tooltip:
+		Name: Fire
+
+COME1:
+	Inherits: FLARE
+	RenderSprites:
+		Image: playerflare
+		Palette: cloak
+		IsPlayerPalette: True
+	-RevealsShroud:
+	Tooltip:
+		Name: Gas from the..
+
+emdark:
+	Inherits: CTFLAG
+	RenderSprites:
+		Image: emu222
+	Tooltip:
+		Name: Come with me (golden ratio)
+	-WithBuildingBib:
+
+iro22:
+	Inherits: CTFLAG
+	RenderSprites:
+		Image: iro2
+	Tooltip:
+		Name: Red thing..
+	-WithBuildingBib:
+
+pummy:
+	Inherits: CTFLAG
+	RenderSprites:
+		Image: pum2
+	Tooltip:
+		Name: Pumpkin
+	-WithBuildingBib:
+
+neweart:
+	Inherits: CTFLAG
+	RenderSprites:
+		Image: ear2
+		Scale: 0.7
+	Tooltip:
+		Name: Live long and prosper
+	-WithBuildingBib:
+
+greenthing:
+	Inherits: CTFLAG
+	RenderSprites:
+		Image: greenthi
+	Tooltip:
+		Name: Green thing
+	-WithBuildingBib:
+
+stars:
+	Inherits: FLARE
+	RenderSprites:
+		Image: stars1
+	Tooltip:
+		Name: Twinkle, twinkle, little star
+
+stars2:
+	Inherits: FLARE
+	RenderSprites:
+		Image: stars2
+	Tooltip:
+		Name: How I wonder what you are
+
+star3:
+	Inherits: FLARE
+	RenderSprites:
+		Image: stars3
+	Tooltip:
+		Name: Up above the world so high
+
+star4:
+	Inherits: FLARE
+	RenderSprites:
+		Image: stars4
+	Tooltip:
+		Name: hello
+
+star5:
+	Inherits: FLARE
+	RenderSprites:
+		Image: stars5
+		Scale: 0.5
+	Tooltip:
+		Name: phone your mom
+
+lighti:
+	Inherits: FLARE
+	RenderSprites:
+		Image: litning
+	Tooltip:
+		Name: ZzZzzz
+
+lcrhti:
+	Inherits: FLARE
+	RenderSprites:
+		Image: hole
+	Tooltip:
+		Name: ZzZ3
+
+lighti:
+	Inherits: SPEN
+	-Targetable:
+	-Buildable:
+	Tooltip:
+		Name: Flooded Sub Pen
+	Building:
+		Footprint: XXX xxx XXX
+		Dimensions: 3,3
+		TerrainTypes: Water
+	RenderSprites:
+		Image: nSPEN
+	Valued:
+		Cost: 0
+
+navaldflod:
+	Inherits: SPEN
+	-Targetable:
+	-Buildable:
+	Tooltip:
+		Name: Flooded Naval Yard
+	Building:
+		Footprint: XXX xxx XXX
+		Dimensions: 3,3
+		TerrainTypes: Water
+	RenderSprites:
+		Image: nsyrd
+	Valued:
+		Cost: 0
+
+redya:
+	Inherits: Ant
+	RenderSprites:
+		Image: ant
+		Palette: invuln
+	Tooltip:
+		Name: red ant
+
+starpo:
+	Inherits: ^ScienceBuilding
+	Inherits@shape: ^2x2Shape
+	RenderSprites:
+		Image: portal
+	Tooltip:
+		Name: Golden Ratio Star Portal (broken chronosphere)
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 1000000
+	Armor:
+		Type: Wood
+
+starpoto:
+	Inherits: CTFLAG
+	RenderSprites:
+		Image: tportal
+	-Tooltip:
+	-WithBuildingBib:
+
+starpearl:
+	Inherits: CTFLAG
+	RenderSprites:
+		Image: pearlstar
+	Tooltip:
+		Name: Pearl moon
+	-WithBuildingBib:
+
+liti2:
+	Inherits: FLARE
+	RenderSprites:
+		Image: liti
+	-Tooltip:
+
+redpo:
+	Inherits: ^ScienceBuilding
+	Inherits@shape: ^2x2Shape
+	RenderSprites:
+		Image: redport
+	Tooltip:
+		Name: testset
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 1000000
+	Armor:
+		Type: Wood
+
+crater1:
+	Inherits: TANKTRAP1
+	RenderSprites:
+		Image: crater1
+	Tooltip:
+		Name: meteor hole
+
+crater2:
+	Inherits: TANKTRAP1
+	RenderSprites:
+		Image: crater2
+	Tooltip:
+		Name: same...
+
+MONE.M:
+	Inherits: ^Crate
+	Interactable:
+		Bounds: 100,100
+	-HiddenUnderFog:
+	AlwaysVisible:
+	Tooltip:
+		Name: Bain Crate 4000$ 
+	GiveCashCrateAction:
+		Amount: 4000
+		SelectionShares: 1
+		UseCashTick: true
+	RenderSprites:
+		Image: baincrate
+        Scale: 5
+
+MONEv:
+	Inherits: MONEYCRATE
+	-HiddenUnderFog:
+	AlwaysVisible:
+
+^Palettes:
+    PaletteFromPaletteWithAlpha@cloak:
+        Name: cloak
+        BasePalette: player
+        Alpha: 0.45
