@@ -700,10 +700,10 @@ Actors:
 		Owner: Neutral
 		Location: 35,85
 	Actor596: mine
-		Owner: Creeps
+		Owner: Neutral
 		Location: 19,36
 	Actor595: mine
-		Owner: Creeps
+		Owner: Neutral
 		Location: 71,54
 	Actor600: mpspawn
 		Owner: Neutral
